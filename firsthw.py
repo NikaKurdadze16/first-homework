@@ -70,11 +70,11 @@ class registerWidget(QDialog):
             self.showWarning('Passwords did not match')
 
     def showWarning(self, message):
-        msg_box = QMessageBox()
-        msg_box.setIcon(QMessageBox.Warning)
-        msg_box.setWindowTitle("Warning")
-        msg_box.setText(message)
-        msg_box.exec_()
+        messageBox = QMessageBox()
+        messageBox.setIcon(QMessageBox.Warning)
+        messageBox.setWindowTitle("Warning")
+        messageBox.setText(message)
+        messageBox.exec_()
 
 app = QApplication(sys.argv)
 widgetStack = QtWidgets.QStackedWidget()
